@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Trattoria Fondo di Mare ofrece una experiencia culinaria única con sabores frescos y un ambiente relajante en tonos azules." />
+    <title>Trattoria Fondo di Mare</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e6f0ff;
+            color: #003366;
+        }
+        header {
+            background-color: #004080;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #336699;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav .nav-center {
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+            outline-offset: 3px;
+        }
+        nav a:hover,
+        nav a:focus {
+            color: #99ccff;
+            outline: 2px solid #99ccff;
+            outline-offset: 3px;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-spacing {
+            margin-top: 50px;
+        }
+        h2 {
+            border-bottom: 3px solid #004080;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        .intro {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .menu-item {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .menu-item h3 {
+            margin-top: 0;
+            color: #00264d;
+        }
+        .menu-item p {
+            font-size: 0.95rem;
+            color: #334d66;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 60px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #00264d;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover,
+        form button:focus {
+            background-color: #336699;
+            outline: none;
+        }
+        @media (max-width: 320px) {
+            main {
+                padding: 0 10px;
+            }
+            nav .nav-center {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Trattoria Fondo di Mare
+    </header>
+    <nav aria-label="Menú principal">
+        <div class="nav-center">
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+	<div style="display: flex; gap: 20px;">
+        <a href="reservas.html">Reservas</a>
+    </div>
+    </nav>
+    <main>
+        <section id="contacto" class="section-spacing">
+            <h2>Contacto</h2>
+            <p>Dirección: Calle Azul 123, Ciudad Marina</p>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Email: contacto@restauranteazul.com</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Trattoria Fondo di Mare - Todos los derechos reservados
+    </footer>
+</body>
+</html>

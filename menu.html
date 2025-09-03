@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Menú detallado de Trattoria Fondo di Mare con recetas y descripciones ampliadas." />
+    <title>Menú Detallado - Trattoria Fondo di Mare</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e6f0ff;
+            color: #003366;
+        }
+        header {
+            background-color: #004080;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #336699;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        nav .nav-center {
+            display: flex;
+            gap: 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+            outline-offset: 3px;
+        }
+        nav a:hover,
+        nav a:focus {
+            color: #99ccff;
+            outline: 2px solid #99ccff;
+            outline-offset: 3px;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-spacing {
+            margin-top: 50px;
+        }
+        h2 {
+            border-bottom: 3px solid #004080;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        .intro {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .menu-item {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+            transition: transform 0.3s ease;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+        .menu-item h3 {
+            margin-top: 0;
+            color: #00264d;
+        }
+        .menu-item p {
+            font-size: 0.95rem;
+            color: #334d66;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 60px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+            max-width: 500px;
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #00264d;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover,
+        form button:focus {
+            background-color: #336699;
+            outline: none;
+        }
+        @media (max-width: 320px) {
+            main {
+                padding: 0 10px;
+            }
+            nav .nav-center {
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+            nav a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Trattoria Fondo di Mare
+    </header>
+    <nav aria-label="Menú principal">
+        <div class="nav-center">
+            <a href="index.html">Inicio</a>
+            <a href="menu.html">Menú</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+	<div style="display: flex; gap: 20px;">
+        <a href="reservas.html">Reservas</a>
+    </div>
+    </nav>
+    <main>
+        <h2>Menú Detallado</h2>
+
+        <article class="recipe">
+            <h3>Filete de Salmón</h3>
+            <p>Un jugoso filete de salmón fresco a la parrilla, acompañado de verduras al vapor y una salsa de limón casera que resalta el sabor del pescado.</p>
+            <strong>Ingredientes:</strong>
+            <ul>
+                <li>Filete de salmón fresco (200g)</li>
+                <li>Brócoli y zanahorias al vapor</li>
+                <li>Limón fresco</li>
+                <li>Aceite de oliva extra virgen</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Ajo finamente picado</li>
+            </ul>
+            <strong>Preparación:</strong>
+            <p>Marinar el salmón con ajo, sal, pimienta y un chorrito de aceite de oliva. Asar a la parrilla por 4-5 minutos de cada lado. Preparar la salsa con jugo de limón, aceite de oliva y un poco de ralladura de limón. Servir acompañado de verduras al vapor.</p>
+        </article>
+
+        <article class="recipe">
+            <h3>Ensalada Mediterránea</h3>
+            <p>Una fresca mezcla de lechugas variadas, tomates cherry, aceitunas Kalamata y queso feta, todo aderezado con vinagre balsámico y aceite de oliva virgen extra.</p>
+            <strong>Ingredientes:</strong>
+            <ul>
+                <li>Lechugas mixtas</li>
+                <li>Tomates cherry</li>
+                <li>Aceitunas Kalamata</li>
+                <li>Queso feta desmenuzado</li>
+                <li>Vinagre balsámico</li>
+                <li>Aceite de oliva virgen extra</li>
+                <li>Orégano seco</li>
+                <li>Sal y pimienta al gusto</li>
+            </ul>
+            <strong>Preparación:</strong>
+            <p>Mezclar todos los ingredientes frescos. Preparar un aderezo con vinagre balsámico, aceite de oliva, orégano, sal y pimienta, y verter sobre la ensalada justo antes de servir.</p>
+        </article>
+
+        <article class="recipe">
+            <h3>Risotto de Champiñones</h3>
+            <p>Arroz arborio cocinado lentamente con caldo de verduras, champiñones frescos salteados y un toque de parmesano rallado para un resultado cremoso y delicioso.</p>
+            <strong>Ingredientes:</strong>
+            <ul>
+                <li>Arroz arborio (200g)</li>
+                <li>Champiñones frescos laminados</li>
+                <li>Caldo de verduras caliente</li>
+                <li>Cebolla picada</li>
+                <li>Parmesano rallado</li>
+                <li>Mantequilla</li>
+                <li>Aceite de oliva</li>
+                <li>Sal y pimienta al gusto</li>
+                <li>Vino blanco (opcional)</li>
+            </ul>
+            <strong>Preparación:</strong>
+            <p>Sofreír la cebolla en mantequilla y aceite, agregar los champiñones y luego el arroz hasta que se vuelva transparente. Añadir vino blanco si se desea y comenzar a incorporar caldo caliente poco a poco, removiendo constantemente hasta que el arroz esté cremoso y al dente. Finalizar con parmesano rallado y ajustar sazón.</p>
+        </article>
+
+        <article class="recipe">
+            <h3>Postre de Frutas Azules</h3>
+            <p>Delicioso postre con frutos del bosque frescos y crema ligera, decorado con menta fresca para un toque final refrescante.</p>
+            <strong>Ingredientes:</strong>
+            <ul>
+                <li>Frutos del bosque mixtos (arándanos, moras, frambuesas)</li>
+                <li>Crema batida ligera</li>
+                <li>Azúcar glas</li>
+                <li>Menta fresca para decorar</li>
+                <li>Opcional: galletas o bizcochos desmenuzados</li>
+            </ul>
+            <strong>Preparación:</strong>
+            <p>Mezclar los frutos del bosque con un poco de azúcar glas. Servir con crema batida y decorar con hojas de menta fresca. Añadir galletas desmenuzadas para textura extra si se desea.</p>
+        </article>
+    </main>
+    <footer>
+        &copy; 2025 Trattoria Fondo di Mare - Todos los derechos reservados
+    </footer>
+</body>
+</html>

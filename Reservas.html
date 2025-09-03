@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Formulario de reservas par aTrattoria Fondo di Mare" />
+    <title>Formulario de Reservas - Trattoria Fondo di Mare</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e6f0ff;
+            color: #003366;
+        }
+        header {
+            background-color: #004080;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: #336699;
+            display: flex;
+            justify-content: flex-start; /* Alinea a la izquierda */
+            padding: 10px 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            cursor: pointer;
+            outline-offset: 3px;
+            margin-right: 15px;
+        }
+        nav a:hover,
+        nav a:focus {
+            color: #99ccff;
+            outline: 2px solid #99ccff;
+            outline-offset: 3px;
+        }
+        main {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            border-bottom: 3px solid #004080;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgb(0 0 0 / 0.1);
+        }
+        form label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 600;
+            color: #00264d;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        form button {
+            background-color: #004080;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover,
+        form button:focus {
+            background-color: #336699;
+            outline: none;
+        }
+        footer {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 15px 10px;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Trattoria Fondo di Mare
+    </header>
+    <nav aria-label="Navegación formulario">
+        <a href="index.html#inicio">Regresar</a>
+    </nav>
+    <main>
+        <section id="reservas" class="section-spacing">
+            <h2>Haz tu Reserva</h2>
+            <p>Reserva tu mesa con anticipación para asegurar tu lugar. Llámanos al <strong>+34 123 456 789</strong> o envíanos un correo a <a href="mailto:reservas@restauranteazul.com">reservas@restauranteazul.com</a>.</p>
+            
+            <form action="https://formspree.io/f/mnnzkgol" method="post" aria-label="Formulario de reserva">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tu@email.com" />
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+34 123 456 789" />
+
+                <label for="fecha">Fecha de la reserva</label>
+                <input type="date" id="fecha" name="fecha" required />
+
+                <label for="personas">Número de personas</label>
+                <select id="personas" name="personas" required>
+                    <option value="" disabled selected>Selecciona</option>
+                    <option value="1">1 persona</option>
+                    <option value="2">2 personas</option>
+                    <option value="3">3 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="5">5 personas</option>
+                    <option value="6">6 personas o más</option>
+                </select>
+
+                <label for="comentarios">Comentarios adicionales</label>
+                <textarea id="comentarios" name="comentarios" rows="3" placeholder="Ej. Solicitar silla para bebé"></textarea>
+
+                <button type="submit">Enviar reserva</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Trattoria Fondo di Mare - Todos los derechos reservados
+    </footer>
+</body>
+</html>
